@@ -1,0 +1,135 @@
+.aboutMe__block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 85px;
+    margin-bottom: 75px;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutMe__block{
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .aboutMe__block{
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+}
+
+
+
+.aboutMe__block>div:not(:last-child){
+    margin-right: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .aboutMe__block>div:not(:last-child){
+        margin-right: unset;
+    }
+}
+
+.aboutMe__img{
+    max-width: 303px;
+    max-height: 303px;
+}
+
+.aboutMe__img img {
+    max-width: 100%;
+    border-radius: 50%;
+    height: auto;
+}
+
+.aboutMe__block hr{
+    background-color: rgb(0, 0, 0);
+    width: 3px;
+    height: 368px;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutMe__hr{
+        width: 100%;
+    }
+
+    .aboutMe__block hr{
+        height: 3px;
+        width: 80%;
+        margin: 40px auto;
+
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .aboutMe__block hr{
+        margin: 20px auto;
+    }
+}
+
+
+.aboutMe__title {
+    font-size: 90px;
+    font-family: "Satisfy";
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    text-shadow: 6px 12px 10px grey;
+}
+
+
+@media screen and (max-width: 768px) {
+    .aboutMe__title {
+        text-align: center;
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .aboutMe__title {
+        font-size: 70px;
+        margin-bottom: 0;
+    }
+}
+
+.aboutMe__text {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 525px;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutMe__text {
+        max-width: unset;
+    }
+}
+
+
+.aboutMe__knowMe {
+    border: 0.95px solid rgb(43, 43, 43);
+    width: 244px;
+    height: 39px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .2s;
+}
+
+.aboutMe__knowMe:hover {
+    background-color: rgb(178, 163, 161);
+    transition-duration: .2s;
+}
+
+
+@media screen and (max-width: 425px) {
+    .aboutMe__knowMe {
+        margin: 0 auto;
+    }
+}

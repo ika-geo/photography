@@ -1,0 +1,131 @@
+.video .wrapper:nth-child(2){
+    border-bottom: 2px solid black;
+}
+
+
+.video__top{
+    background: url("../img/video/videoBG.png") center center no-repeat;
+    background-size: cover;
+    padding-top: 110px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+@media screen and (max-width: 768px){
+    .video__top{
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+}
+
+.video__top img:first-child{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.video__top img:nth-child(2){
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 768px){
+    .video__top img{
+        display: none;
+    }
+
+}
+
+
+.video__topBlock{
+    margin: 0 auto;
+    position: relative;
+}
+
+.video__title{
+    font-size: 66px;
+    color: rgb(255, 255, 255);
+    margin: 0 auto 40px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid white;
+    width: fit-content;
+}
+
+@media screen and (max-width: 768px){
+    .video__title{
+        font-size: 50px;
+        margin: 0 auto 30px;
+        padding-bottom: 15px;
+    }
+
+}
+
+.video__Text{
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(43, 43, 43);
+    line-height: 1.167;
+    text-align: center;
+    max-width: 810px;
+}
+
+@media screen and (max-width: 768px){
+    .video__Text{
+        text-align: unset;
+    }
+}
+
+
+.video__gallery{
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+
+
+
+
+.youtubeFrame{
+    float: none;
+    clear: both;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+
+.youtubeFrame iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.video__iframe{
+    width: 80%;
+    margin: 0 auto 40px;
+}
+
+
+.video__moreVideos{
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    transition-duration: .2s;
+}
+
+.video__moreVideos:hover{
+    background-color: rgb(178, 163, 161);
+    transition-duration: .2s;
+}

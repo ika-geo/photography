@@ -1,0 +1,133 @@
+
+.testimonial{
+    padding: 50px 0;
+}
+
+.testimonial__title{
+    font-size: 66px;
+    font-family: "Dancing Script";
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 425px){
+    .testimonial__title{
+        font-size: 45px;
+    }
+
+}
+
+.testimonial__subTitle{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: lighter;
+}
+
+
+@media screen and (max-width: 425px){
+    .testimonial__subTitle{
+        font-size: 30px;
+    }
+}
+
+
+
+.testimonial__mainBlock{
+    margin-top: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+
+@media screen and (max-width: 425px){
+    .testimonial__mainBlock{
+        justify-content: center;
+    }
+}
+
+
+.testimonial__block{
+    border: 1px solid black;
+    padding: 35px;
+    transition-duration: 0.7s;
+    margin-bottom: 130px;
+}
+
+.testimonial__block:hover{
+    background: linear-gradient(145deg, white, rgb(178, 163, 161));
+    transition-duration: 0.7s;
+}
+
+
+@media screen and (max-width: 425px){
+    .testimonial__block:not(:last-child){
+        margin-bottom: 130px;
+    }
+}
+
+
+@media screen and (max-width: 425px){
+    .testimonial__block{
+        padding: 35px 5px 5px;
+    }
+}
+
+
+.testimonial__block img{
+    display: block;
+    max-width: 210px;
+    border-radius: 50%;
+    margin: -60% auto 20px;
+}
+
+@media screen and (max-width: 425px){
+    .testimonial__block img{
+        margin-top: -34%;
+    }
+}
+
+
+.testimonial__block h3{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.testimonial__block p{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+    text-align: center;
+    max-width: 255px;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 425px){
+    .testimonial__block  p{
+        max-width: unset;
+    }
+}
+
+
+.testimonial__readMore{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin: -120px auto 0;
+    padding: 15px 25px;
+    width: fit-content;
+    border: 1px solid black;
+    transition-duration: 0.2s;
+}
+
+.testimonial__readMore:hover{
+    background-color: rgb(178, 163, 161);
+    transition-duration: 0.2s;
+ }
+

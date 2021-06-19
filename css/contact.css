@@ -1,0 +1,150 @@
+.contact{
+    padding-top: 45px;
+    padding-bottom: 35px;
+    background: url("../img/contactBG.png") top right no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 425px){
+    .contact{
+        padding-top: 20px;
+    }
+}
+
+
+.contact__title{
+    font-size: 66px;
+    font-family: "Nothing You Could Do";
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+@media screen and (max-width: 425px){
+    .contact__title{
+        font-size: 55px;
+    }
+}
+
+
+
+.contact__subTitle {
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 425px){
+    .contact__subTitle {
+        font-size: 40px;
+        letter-spacing: unset;
+    }
+}
+
+.contact__mainBlock{
+    border-top: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px){
+    .contact__leftBlock{
+        align-items: center;
+    }
+}
+
+
+.contact__leftBlock{
+    margin-right: 20px;
+    width: 355px;
+}
+
+
+@media screen and (max-width: 768px){
+    .contact__leftBlock{
+        margin-right: unset;
+    }
+}
+
+
+.contact__leftBlock, .contact__rightBlock{
+    margin-top: 25px;
+}
+
+.contact__rightBlock img{
+    display: block;
+}
+
+
+@media screen and (max-width: 768px){
+    .contact__rightBlock{
+        display: none;
+    }
+}
+
+
+
+
+
+.contact form{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.contact form p{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px){
+    .contact form p{
+        margin: 15px 0;
+    }
+}
+
+
+.contact input{
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    color: black;
+    border-top: 1px solid black;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.contact textarea{
+    display: block;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: black;
+    border-top: 1px solid black;
+    resize: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.contact input[type="submit"]{
+    border: 1px solid black;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.contact input[type="submit"]:hover{
+    background-color: rgb(178, 163, 161);
+    transition-duration: 0.2s;
+    box-shadow: 0 0 15px 0px #463d3d;
+}
+
+
+

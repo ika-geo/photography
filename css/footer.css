@@ -1,0 +1,105 @@
+footer{
+    background: url("../img/footerBG.png") no-repeat;
+    background-size: cover;
+    padding-top: 90px;
+    color: white;
+}
+
+@media screen and (max-width: 425px){
+    footer{
+        padding-top: 30px;
+    }
+
+}
+
+
+footer .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 425px){
+    footer .wrapper{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+footer .wrapper >div{
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 425px){
+    footer .wrapper >div{
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+}
+
+
+
+footer h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/*contact*/
+
+
+.footer__contact li{
+    margin-bottom: 15px;
+}
+
+.footer__contact i{
+    margin-right: 10px;
+}
+
+.footer__contact a{
+    display: inline-block;
+    color: white;
+}
+
+
+/*social media*/
+
+.footer__social h3{
+    text-align: center;
+}
+
+.footer_socialMedia{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.footer_socialMedia li{
+    margin-bottom: 15px;
+}
+
+.footer_socialMedia li:not(:last-child){
+    margin-right: 30px;
+}
+
+
+
+
+.footer_socialMedia i{
+    color: white;
+    font-size: 18px;
+}
+
+
+/*copy*/
+
+
+
+.footer__copy p {
+    font-size: 18px;
+    max-width: 320px;
+}
