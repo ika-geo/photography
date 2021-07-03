@@ -5,7 +5,10 @@
     list-style: none;
     text-decoration: none;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
+
+
 
 a{
     display: block;

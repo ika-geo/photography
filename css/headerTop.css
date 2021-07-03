@@ -7,7 +7,25 @@ header{
 
 .headerTop{
     margin-bottom: 180px;
+    transition-duration: .2s;
 }
+
+
+.headerTop.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 5px 20%;
+    background: url("../img/header/headerBG.png") no-repeat;
+    background-size: cover;
+    background-position-y: top;
+    z-index: 1000;
+    transition-duration: .2s;
+}
+
+
+
 
 .headerMenu{
     display: flex;
@@ -51,12 +69,31 @@ header{
 }
 
 
-.headerMenu input{
+.header__input{
     display: none;
+    position: relative;
 }
 
-.headerMenu input.active{
-    display: inline-block;
+.header__input.active{
+    display: flex;
+}
+
+.header__input:hover::after{
+    content: unset;
+}
+
+.header__inputSearch{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+}
+
+.header__inputSearch{
+    font-size: 15px;
+}
+
+.header__input input{
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     height: 25px;
@@ -65,6 +102,8 @@ header{
     animation-name: input;
     animation-duration: 0.3s;
 }
+
+
 
 @keyframes input {
     0%{
