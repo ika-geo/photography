@@ -53,6 +53,7 @@
     padding-bottom: 25px;
     border-bottom: 1px solid white;
     width: fit-content;
+    width: -moz-fit-content;
 }
 
 @media screen and (max-width: 768px){
